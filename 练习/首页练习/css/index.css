@@ -1,0 +1,269 @@
+/**
+  * @namespace 首页样式(scope)
+  * @author    yaoxxxyao<yaoxxx@xxxxx.com>
+  * @date      2018/9/14
+ */
+
+/**
+  * 一些基础设置
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+body{
+    width: 23.4rem;
+    margin: 0 auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li,ul,dl,dd,dt{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/**
+   三个订单状态
+ */
+.g-head .m-con .u-top {
+    overflow: hidden;
+    display: flex;
+    justify-content:space-around;
+    /*宽度为外层宽度的100%*/
+    width: 23.4rem;
+    /*设置容器的高度*/
+    height:3.75rem;
+}
+.g-head .m-con .u-top-col{
+    overflow: hidden;
+    display: flex;
+    /*设置每个项目的高度和宽度*/
+    width: 6.56rem;
+    height: 3.75rem;
+    /*margin: 0.7rem;*/
+    border-radius: 7px;
+}
+.g-head .m-con .u-top-col .item-left{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.g-head .m-con .u-top-col .item-right{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    flex: 2;
+}
+.g-head .m-con .u-top-col .item-right p{
+    display: inline-block;
+    width: 3.625rem;
+    text-align: left;
+    color: white;
+    font-size: 0.65rem;
+    /*不换行*/
+    white-space: nowrap;
+    /*加省略号*/
+    text-overflow: ellipsis;
+}
+.g-head .m-con .orange{
+    background: linear-gradient( to right,#ffb66e,#ffd69d);
+}
+.g-head .m-con .pink{
+    background: linear-gradient(to right,#ff7989,#ffa0a0);
+}
+.g-head .m-con .green{
+    background: linear-gradient(to right,#3fd490,#7debb8);
+}
+/**
+  页面上部图标
+ */
+.g-head .m-con .u-con-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.8rem;
+    overflow: hidden;
+}
+.g-head .u-con-bottom .u-bottom-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.g-head .u-con-bottom .u-bottom-col span{
+    display: inline-block;
+    font-size: 0.7rem;
+    line-height: 2rem;
+    height: 2rem;
+}
+/**
+   main标题部分
+ */
+.g-main .m-tit{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 0.93rem;
+}
+.g-main .m-tit span{
+    display: inline-block;
+    border-left: red solid 0.2rem;
+    padding-left: 0.93rem;
+    font-weight: bold;
+    font-size: 0.93rem;
+}
+/**
+   list中订单编号
+ */
+
+.g-main .m-con{
+    box-sizing: border-box;
+    padding: 0 0.93rem 1rem 0.93rem;
+}
+.g-main .m-con .u-item{
+    margin-top: 1rem;
+    border: #f3f3f3 solid 1px;
+    /*设置边框阴影*/
+    box-shadow: 0 0 2rem 0.2rem #f8f8f8;
+}
+.g-main .m-con .u-item-num{
+    height: 2.65625rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.g-main .m-con .u-item-num span{
+    padding: 0 1.09375rem;
+}
+.g-main .u-item-num span:nth-child(1){
+    font-size: 0.68rem;
+    color: #a8a8a8;
+}
+.g-main .u-item-num span:nth-child(2){
+    font-size: 0.68rem;
+    color: orange;
+}
+
+/**
+   订单信息
+ */
+.u-item-info{
+    width: 100%;
+    height: 4.6875rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: solid white 4px;
+    overflow: hidden;
+}
+.u-item-info-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.u-item-info-row span{
+    padding: 0 0 0 1.09375rem;
+}
+.u-item-info-row{
+    width: 100%;
+    height: 4.6875rem;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+}
+.u-item-info-row .p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.u-item-info-row div:nth-child(2) span{
+    padding: 0 0.7rem 0 0;
+}
+.u-item-info-row .price{
+    color: red;
+    font-size: 0.75rem;
+}
+.u-item-info-row .pro{
+    font-size: 1rem;
+}
+.u-item-info-row .grey{
+    color: #b9b9b9;
+    font-size: 0.75rem;
+}
+.u-item-info-row input{
+    border-radius: 0.9rem;
+    width: 3.7rem;
+    height: 1.71rem;
+}
+/**
+   下单信息
+ */
+.u-item-text{
+    height: 4.6875rem;
+    border-bottom:#f3f3f3 solid 1px;
+    overflow: hidden;
+}
+.u-item-text p{
+    height: 50%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.u-item-text span{
+    font-size: 0.75rem;
+    padding: 0 0.8125rem 0 0;
+}
+/**
+   订单状态按钮
+ */
+.u-item-state p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3.594rem;
+    padding: 0 0.8125rem 0 0;
+    overflow: hidden;
+}
+.u-item-state input{
+    border: none;
+    border-radius: 0.9rem;
+    background-color: red;
+    width: 5rem;
+    height: 1.87rem;
+    color: white;
+}
+/**
+   页面底栏图标
+ */
+.g-foot .m-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.m-con .u-con-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.m-con img{
+    width:1.71rem;
+}
+.g-foot .m-con .red{
+    color: #f7392e;
+}
+.g-foot .m-con span{
+    color: #a1a1a1;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}

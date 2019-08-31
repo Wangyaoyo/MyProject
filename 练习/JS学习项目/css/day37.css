@@ -1,0 +1,658 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #cccccc;
+}
+#header .tit{
+    display: inline-block;
+    height: 100%;
+    margin-left: 200px;
+}
+#header .tit span{
+    line-height: 30px;
+}
+/*个人中心*/
+.menber{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    /*将父级设置为相对定位，子级为绝对定位是一种灵活的方式*/
+    position: relative;
+    margin-right: 200px;
+}
+.menber ul{
+    margin: 0;
+    position: absolute;
+    left: -10px;
+    width: 100px;
+    height: 0;
+    border-top: none;
+    padding: 5px 0 0 0;
+    border: solid #999 1px;
+    background-color: antiquewhite;
+    display: none;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+.menber ul li{
+    line-height: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+.menber ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.menber ul li a:hover{
+    background-color: orange;
+}
+#header .login,#header .reg{
+    float: right;
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+/*遮罩*/
+#screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    /*设置元素的不透明级别*/
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    /*设置元素的堆叠顺序*/
+    z-index: 9998;
+    display: none;
+}
+#test{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+/*登录框*/
+#login{
+    height: 250px;
+    width: 350px;
+    border: 1px #ccc solid;
+    display: none;
+    position: absolute;
+    background-color: white;
+    /*设置元素的堆叠顺序*/
+    z-index: 9999;
+}
+#login h2{
+    padding: 0;
+    height: 40px;
+    width: 350px;
+    line-height: 40px;
+    font-size:14px;
+    letter-spacing:1px;
+    color:#666;
+    /*设置字体间距*/
+    text-align: center;
+    display: inline-block;
+    border-bottom:1px solid #ccc;
+    margin: 0 0 20px 0;
+    /*一个拖动的图标*/
+    cursor: move;
+}
+#login a{
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+#login div.user,#login div.pass{
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+    text-align: center;
+}
+#login input.text{
+    width: 200px;
+    height: 25px;
+    border: 1px #ccc solid;
+    background-color: #fff;
+    font-size: 14px;
+}
+#login .button{
+    text-align: center;
+    padding: 10px 0;
+}
+#login input.submit{
+    width: 107px;
+    height: 30px;
+    background-color: bisque;
+    border: none;
+    cursor: pointer;
+}
+#login .other{
+    text-align: right;
+    padding: 15px;
+    font-size: 12px;
+    color: #666;
+}
+/*一键分享*/
+#share{
+    width: 210px;
+    height: 315px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 0px;
+    left: -211px;
+    background: #fff;
+}
+#share h2{
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    text-indent: 10px;
+}
+#share ul{
+    height: 254px;
+    padding: 3px 0 2px 5px;
+    margin: 0;
+}
+#share ul li{
+    text-decoration: none;
+    list-style: none;
+    width: 96px;
+    height: 28px;
+    float: left;
+}
+#share ul li a{
+    display: block;
+    height: 26px;
+    width: 95px;
+    padding: 2px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #666;
+    background-repeat: no-repeat;
+    text-indent: 30px;
+}
+#share ul li a.a {
+    background-position:5px 6px;
+}
+#share ul li a.b {
+    background-position:5px -24px;
+}
+#share ul li a.c {
+    background-position:5px -54px;
+}
+#share ul li a.d {
+    background-position:5px -84px;
+}
+#share ul li a.e {
+    background-position:5px -114px;
+}
+#share ul li a.f {
+    background-position:5px -144px;
+}
+#share ul li a.g {
+    background-position:5px -174px;
+}
+#share ul li a.h {
+    background-position:5px -204px;
+}
+#share ul li a.i {
+    background-position:5px -234px;
+}
+#share ul li a.j {
+    background-position:5px -264px;
+}
+#share ul li a.k {
+    background-position:5px -295px;
+}
+#share ul li a.l {
+    background-position:5px -324px;
+}
+#share ul li a.m {
+    background-position:5px -354px;
+}
+#share ul li a.n {
+    background-position:5px -384px;
+}
+#share ul li a.o {
+    background-position:5px -414px;
+}
+#share ul li a.p {
+    background-position:5px -444px;
+}
+#share ul li a:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    background-color: #eee;
+    color: #06f;
+}
+#share .share_footer{
+    height: 26px;
+    background-color: #eee;
+    position: relative;
+}
+#share .share_footer a{
+    position: absolute;
+    top: 1px;
+    left: 140px;
+    padding: 0;
+    float: right;
+    line-height: 26px;
+    text-decoration: none;
+    color: #666;
+}
+#share .share_footer a:hover{
+    color: #06f;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+#share .share_footer span{
+    display:block;
+    width:24px;
+    height:88px;
+    position:absolute;
+    top:-230px;
+    left:210px;
+    cursor:pointer;
+}
+/*滑动导航*/
+#nav{
+    width: 465px;
+    height: 52px;
+    margin: 50px auto 0 auto;
+    position: relative;
+}
+#nav ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+#nav div.nav_bg{
+    display: block;
+    width: 85px;
+    height: 52px;
+    /*层次*/
+    position: absolute;
+    left: 20px;
+    top:10px;
+    z-index: 2;
+    overflow: hidden;
+}
+#nav ul.about{
+    z-index: 4;
+    /*background: red;*/
+    left: 20px;
+    cursor: pointer;
+    background-color: black;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#nav ul.black{
+    left: 20px;
+    color: black;
+    z-index: 1;
+}
+#nav ul.white{
+    width: 425px;
+    left: 0;
+    top: -10px;
+    color: white;
+    z-index: 3;
+}
+#nav ul li{
+    width: 85px;
+    height: 52px;
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 52px;
+    font-weight: bold;
+}
+/*收缩菜单*/
+#main {
+    width:900px;
+    margin:50px auto;
+    font-size: 10px;
+}
+#sidebar {
+    width:250px;
+    height:500px;
+    float:left;
+}
+#sidebar h2 {
+    width:248px;
+    height:30px;
+    line-height:30px;
+    text-indent:10px;
+    margin:0;
+    padding:0;
+    font-size:14px;
+    border:1px solid #ccc;
+    border-bottom:none;
+}
+#sidebar ul {
+    height:150px;
+    border:1px solid #ccc;
+    margin:0 0 10px 0;
+    overflow:hidden;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#sidebar ul li {
+    height:30px;
+    line-height:30px;
+    text-indent:30px;
+}
+#sidebar ul li a {
+    text-decoration:none;
+    color:#333;
+}
+#index {
+    width:630px;
+    height:570px;
+    background:#eee;
+    float:right;
+}
+
+#banner{
+    width: 900px;
+    height: 150px;
+    float: left;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+#banner img{
+  /*取消图片之间的空白*/
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#banner ul{
+  position: absolute;
+  top: 128px;
+  left: 420px;
+  z-index: 4;
+}
+#banner ul li{
+  float: left;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+}
+#banner span{
+  position: absolute;
+  top: 125px;
+  left: 0;
+  width: 900px;
+  height: 25px;
+  background-color: #333;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  z-index: 3;
+}
+#banner strong{
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  z-index: 4;
+  color: white;
+}
+#photo {
+    width:900px;
+    float:left;
+}
+#photo dl {
+    width:225px;
+    height:270px;
+    float:left;
+    margin:5px 0 15px 0;
+}
+#photo dl dt {
+    width:200px;
+    height:250px;
+    background:#eee;
+    margin:0 auto;
+}
+#photo img{
+    display: block;
+    cursor: pointer;
+}
+/*注册表单*/
+#reg {
+    width:600px;
+    height:550px;
+    border:1px solid #ccc;
+    position:absolute;
+    display:none;
+    z-index:9999;
+    background:#fff;
+    /*top: 10px;*/
+    /*left: 200px;*/
+}
+#reg h2 {
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    letter-spacing:1px;
+    color:#666;
+    padding:0;
+    border-bottom:1px solid #ccc;
+    margin:0 0 20px 0px;
+    cursor:move;
+}
+#reg h2 img {
+    float:right;
+    position:relative;
+    top:14px;
+    right:8px;
+    cursor:pointer;
+}
+#reg dl {
+    margin:20px;
+    padding:0 0 20px 0;
+    font-size:14px;
+    color:#333;
+    position:relative ;
+}
+#reg dl dd {
+    height:30px;
+    padding:5px 0;
+}
+#reg dl dd input, #reg dl dd select {
+    width:200px;
+    height:25px;
+    border:1px solid #ccc;
+    background:#fff;
+    font-size:14px;
+    color:#666;
+}
+#reg dl dd select {
+    width:202px;
+}
+#reg dl dd span.info,span.error,span.succ{
+    display: block;
+    color: #333;
+    font-size: 12px;
+    width: 165px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 0 0 35px;
+    position: absolute;
+    letter-spacing: 1px;
+    display: none;
+}
+#reg dl dd span.info_user,span.error_user{
+    height: 43px;
+    line-height: 18px;
+    padding-top: 7px;
+    top: 3px;
+    left: 295px;
+}
+#reg dl dd span.succ{
+    height: 14px;
+    line-height: 14px;
+    padding: 0 0 0 20px;
+    color: green;
+}
+#reg dl dd span.succ_user{
+    top: 12px;
+    left: 295px;
+}
+
+#reg dl dd span.info_pass{
+    top: 5px;
+    left: 295px;
+    width: 244px;
+    height: 106px;
+    display: block;
+    padding:4px 0 0 16px;
+    letter-spacing: 0;
+    display: none;
+}
+#reg dl dd span.info_pass p {
+    height:25px;
+    line-height:25px;
+    color:#666;
+}
+#reg dl dd span.info_pass p strong.s {
+    color:#ccc;
+}
+#reg dl dd span.error_pass{
+    top: 43px;
+    left: 295px;
+}
+#reg dl dd span.succ_pass{
+    top: 52px;
+    left: 295px;
+    display: none;
+}
+#reg dl dd.birthday select {
+    width:100px;
+}
+#reg dl dd textarea {
+    border:1px solid #ccc;
+    width:360px;
+    height:100px;
+    background:#fff;
+}
+#reg dl dd input.submit {
+    width:143px;
+    height:33px;
+    border:none;
+    cursor:pointer;
+    margin:0 auto;
+}
+
+#reg dl dd span.info_notpass {
+    top:80px;
+    left:295px;
+}
+#reg dl dd span.error_notpass {
+    top:83px;
+    left:295px;
+}
+#reg dl dd span.succ_notpass {
+    top:92px;
+    left:295px;
+}
+#reg dl dd span.info_ans {
+    top:163px;
+    left:295px;
+}
+#reg dl dd span.error_ans {
+    top:163px;
+    left:295px;
+}
+#reg dl dd span.succ_ans {
+    top:172px;
+    left:295px;
+}
+#reg dl dd span.info_email {
+    top:203px;
+    left:295px;
+}
+#reg dl dd span.error_email {
+    top:203px;
+    left:295px;
+}
+#reg dl dd span.succ_email {
+    top:212px;
+    left:295px;
+}
+#reg dl dd ul.all_email {
+    width:180px;
+    height:130px;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:5px 10px;
+    position:absolute;
+    top:230px;
+    left:74px;
+    display:none;
+}
+#reg dl dd ul.all_email li {
+    height:25px;
+    line-height:25px;
+    border-bottom:1px solid #E5EDF2;
+    padding:0 5px;
+    cursor:pointer;
+}
+#reg dl dd span.error_ques {
+    top:123px;
+    left:295px;
+    display: block;
+}
+#photo_big{
+    width:620px;
+    height:511px;
+    border:1px solid #ccc;
+    position:absolute;
+    display:none;
+    z-index:9999;
+    background:#fff;
+}
+#photo_big h2 {
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    letter-spacing:1px;
+    color:#666;
+    padding:0;
+    border-bottom:1px solid #ccc;
+    margin:0 0 20px 0px;
+    cursor:move;
+}
+#photo_big h2 img {
+    float:right;
+    position:relative;
+    top:14px;
+    right:8px;
+    cursor:pointer;
+}

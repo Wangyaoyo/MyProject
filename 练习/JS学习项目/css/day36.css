@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 900px;
+    height: 30px;
+    margin: 0 auto;
+}
+.menber{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    /*将父级设置为相对定位，子级为绝对定位是一种灵活的方式*/
+    position: relative;
+}
+ul{
+    margin: 0;
+    position: absolute;
+    /*top: 30px;*/
+    left: -10px;
+    width: 100px;
+    height: 120px;
+    border-top: none;
+    padding: 5px 0 0 0;
+    border: solid #999 1px;
+    background-color: antiquewhite;
+    display: none;
+}
+ul li{
+    line-height: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+ul li a:hover{
+    background-color: orange;
+}

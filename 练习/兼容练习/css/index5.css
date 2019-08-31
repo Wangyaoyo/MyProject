@@ -1,0 +1,356 @@
+/**
+  * @namespace 红创金服(scope)
+  * @author    yaoxxxyao<yaoxxx@xxx.com>
+  * @date      2018/9/26
+ */
+
+/*头部*/
+.g-head{
+    width: 1300px;
+    margin: 0 auto;
+    height: 90px;
+    overflow: hidden;
+}
+.g-head .m-top .u-left{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    float: left;
+    padding-left: 516px;
+    padding-right: 120px;
+    color: #ababab;
+}
+.g-head .m-top .u-right{
+    color: #ababab;
+}
+.g-head .m-bottom{
+    height: 58px;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 10px 0 0 0 ;
+    overflow: hidden;
+}
+.g-head .m-bottom .u-left{
+    padding-left: 30px;
+    width: 176px;
+    height: 100%;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    padding-right: 240px;
+    overflow: hidden;
+}
+.g-head .m-bottom .u-left img{
+    width: 176px;
+    height: 54px;
+}
+.g-head .m-bottom .u-right{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align: top;
+    overflow: hidden;
+}
+.g-head .m-bottom .u-right span{
+    display: inline-block;
+    width: 130px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 20px;
+}
+.g-head .m-bottom .u-right .orange{
+    background-color: #ff7300;
+    color: white;
+}
+/*主体上*/
+.g-main{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f2f3f9;
+    overflow: hidden;
+}
+.g-main .m-top{
+    width: 1300px;
+    height: 70px;
+    margin: 0 auto;
+    /*padding-left: 10px;*/
+    text-align: center;
+    overflow: hidden;
+}
+.g-main .m-top span{
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 15px;
+    float: left;
+}
+/*主体中*/
+.g-main .m-center{
+    width: 1300px;
+    height: 964px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*主体中左*/
+.g-main .m-center .u-left{
+    width: 300px;
+    height: 100%;
+    margin-left: 15px;
+    background-color: white;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    float: left;
+}
+.g-main .m-center .u-left .u-row{
+    height: 70px;
+    width: 100%;
+    border: solid 1px #eeeeee;
+    border-left: 0;
+    border-right: 0;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.g-main .m-center .u-left .u-row img{
+    height: 20px;
+    width: 20px;
+    padding: 0 15px 0 75px;
+}
+.g-main .m-center .u-left .u-row span{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 100px;
+    height: 100%;
+    font-size: 20px;
+    line-height: 70px;
+}
+.g-main .m-center .u-left .u-block{
+    height: 133px;
+    width: 100%;
+    border: solid 1px #eeeeee;
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+}
+.g-main .m-center .u-left p{
+    padding: 10px 0 0 120px;
+}
+/*主体中右*/
+.g-main .m-center .u-right{
+    width: 870px;
+    height: 630px;
+    margin: 0 0 0 30px;
+    background-color: white;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    overflow: hidden;
+}
+.g-main .m-center .u-right .u-tit{
+    /*width: 840px;
+    height: 70px;
+    padding-left: 30px;
+    overflow: hidden;*/
+    margin-left: 30px;
+    height: 70px;
+    width: 70px;
+    color: #ff7300;
+    border-bottom: solid #ff7300 3px;
+    line-height: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    overflow: hidden;
+}
+/*span不能显示下边框？？？*/
+.g-main .m-center .u-right .u-tit span{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    width: 70px;
+    /*height: 70px;*/
+    line-height: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ff7300;
+    border-bottom: solid #ff7300 2px;
+}
+.g-main .m-center .u-right .u-top{
+    height: 155px;
+    width: 810px;
+    margin: 0 30px;
+    border-top: solid 1px #dedede;
+    overflow: hidden;
+}
+.g-main .m-center .u-right .u-top .u-col1{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 85px;
+    height: 100%;
+    padding-right: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+.g-main .m-center .u-right .u-top .u-col2{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 480px;
+    height: 155px;
+    font-size: 13px;
+    line-height: 155px;
+}
+.g-main .m-center .u-right .u-top .u-col3{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 112px;
+    height: 112px;
+    vertical-align: middle;
+}
+.g-main .m-center .u-right .u-bottom{
+    height: 160px;
+    width: 810px;
+    margin: 0 30px;
+    overflow: hidden;
+    border-top: solid 1px #dedede;
+    overflow: hidden;
+}
+.g-main .m-center .u-right .u-bottom .u-bcon{
+    width: 810px;
+    padding: 35px 0 0 0;
+    overflow: hidden;
+}
+.g-main .m-center .u-right .u-bottom .u-col1{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding-right: 15px;
+    float: left;
+    width: 85px;
+    height: 100%;
+}
+.g-main .m-center .u-right .u-bottom .u-col2{
+    width: 700px;
+    height: 90px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.g-main .m-center .u-right .u-bottom .url{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    float: left;
+    padding-left: 15px;
+    width: 565px;
+    height: 50px;
+    font-size: 13px;
+    line-height: 50px;
+    border: solid 1px #dedede;
+    color: #b8b8b8;
+}
+.g-main .m-center .u-right .u-bottom .link{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    line-height: 50px;
+    background-color: #ff7300;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+.g-main .m-center .u-right .u-bottom .word{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+}
+/*主体底部*/
+.g-main .m-foot{
+    margin-top: 105px;
+    height: 230px;
+    width: 100%;
+    background-color: white;
+    font-size: 12px;
+    color: #ababab;
+    overflow: hidden;
+}
+.g-main .m-foot .u-con{
+    height: 200px;
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.g-main .m-foot .u-col1{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    float: left;
+    width: 190px;
+    height: 100%;
+    overflow: hidden;
+}
+.g-main .m-foot  p{
+    padding: 15px 0 ;
+}
+.g-main .m-foot .u-col2{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    float: left;
+    width: 140px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.g-main .m-foot .u-col3{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    float: left;
+    width: 270px;
+    height: 100%;
+    overflow: hidden;
+}
+.g-main .m-foot .thin{
+    padding: 8px 0;
+}
+.g-main .m-foot .touch{
+    padding: 15px 0 0 20px;
+}
+.g-main .m-foot .u-col4{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    float: left;
+    width: 140px;
+    height: 100%;
+    overflow: hidden;
+}
+/*底部*/
+.g-foot{
+    width: 100%;
+    height: 60px;
+    background-color: #e7e6e9;
+    overflow: hidden;
+}
+.g-foot p{
+    color: #ababab;
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: center;
+}
